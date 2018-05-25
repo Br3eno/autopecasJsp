@@ -79,7 +79,19 @@
                     <div class="x_content">
                         <br>
                         <form id="demo-form2" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
-
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Pessoa</label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div id="Sexo" class="btn-group" data-toggle="buttons">
+                                        <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                            <input type="radio" name="gender" value="fisica" data-parsley-multiple="gender"> &nbsp; Fisica &nbsp;
+                                        </label>
+                                        <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                            <input type="radio" name="gender" value="juridica" data-parsley-multiple="gender"> Juridica
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="nome">Nome ou Razão Social<span class="required">*</span>
                                 </label>
@@ -125,7 +137,7 @@
                                         <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
                                             <input type="radio" name="gender" value="masculino" data-parsley-multiple="gender"> &nbsp; Masculino &nbsp;
                                         </label>
-                                        <label class="btn btn-primary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                        <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
                                             <input type="radio" name="gender" value="feminino" data-parsley-multiple="gender"> Feminino
                                         </label>
                                     </div>
