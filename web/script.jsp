@@ -10,3 +10,4 @@
     <!-- Custom Theme Scripts -->
     <script src="js/custom.min.js"></script>
     <script src="js/jquery.smartWizard.js"></script>
+    <script src="js/validator.js"></script>
