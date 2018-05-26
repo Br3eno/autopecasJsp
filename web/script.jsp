@@ -4,6 +4,7 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- FastClick -->
     <script src="js/fastclick.js"></script>
+    <script src="js/jquery.inputmask.bundle.min.js"></script>
     <!-- NProgress -->
     <script src="js/nprogress.js"></script>
     

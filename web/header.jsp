@@ -1,4 +1,5 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="ISO-8859-2">
 <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome 

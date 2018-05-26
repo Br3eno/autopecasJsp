@@ -109,7 +109,7 @@
                             <div class="form-group">
                                 <label for="cpf_cnpj" class="control-label col-md-3 col-sm-3 col-xs-12">CPF ou CNPJ:</label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input id="cpf_cnpj" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                                    <input type="number" id="cpf_cnpj" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -118,16 +118,16 @@
                                     <input id="rg_ie" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="item form-group">
                                 <label for="email" class="control-label col-md-3 col-sm-3 col-xs-12">E-mail:</label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input id="email" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                                    <input type="email" id="email" name="email" required="required" class="form-control col-md-7 col-xs-12" type="text" name="email">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="email" class="control-label col-md-3 col-sm-3 col-xs-12">Contato:</label>
+                                <label for="contato" class="control-label col-md-3 col-sm-3 col-xs-12">Contato:</label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input id="contato" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                                    <input id="contato" class="form-control col-md-7 col-xs-12" type="text" name="middle-name" data-inputmask="'mask' : '(999) 999-9999'">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -147,7 +147,8 @@
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Data de Nasc.:<span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input id="data_nasc" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                                    <input id="data_nasc" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" class="form-control" data-inputmask="'mask': '99/99/9999'">
+                                    
                                 </div>
                             </div>
                             <div class="ln_solid"></div>

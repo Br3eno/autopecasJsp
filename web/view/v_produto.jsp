@@ -13,7 +13,7 @@
                         <div class="title_right">
                             <div class="col-md-6 col-sm-5 col-xs-12 form-group pull-right top_search">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Codigo ou Descri√ß√£o...">
+                                    <input type="text" class="form-control" placeholder="CÛdigo ou DescriÁ„o...">
                                     <span class="input-group-btn">
                                         <button class="btn btn-default" type="button">Pesquisar</button>
                                     </span>
@@ -31,7 +31,7 @@
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="x_panel">
                             <div class="x_title">
-                                <h2>Cadastro <small>sess√µes</small></h2>
+                                <h2>Cadastro <small>sessıees</small></h2>
                                 <ul class="nav navbar-right panel_toolbox">
                                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                     </li>
@@ -59,7 +59,7 @@
                                                 <span class="step_no">1</span>
                                                 <span class="step_descr">
                                                     Parte 1<br />
-                                                    <small>Descri√ß√£o</small>
+                                                    <small>DescriÁ„o</small>
                                                 </span>
                                             </a>
                                         </li>
@@ -68,7 +68,7 @@
                                                 <span class="step_no">2</span>
                                                 <span class="step_descr">
                                                     Parte 2<br />
-                                                    <small>C√≥digos</small>
+                                                    <small>CÛdigos</small>
                                                 </span>
                                             </a>
                                         </li>
@@ -86,7 +86,7 @@
                                         <form class="form-horizontal form-label-left">
 
                                             <div class="form-group">
-                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="descri√ß√£o">Descri√ß√£o<span class="required">*</span>
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="descri√ß√£o">DescriÁ„o<span class="required">*</span>
                                                 </label>
                                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                                     <input type="text" id="descricao" required="required" class="form-control col-md-7 col-xs-12">
@@ -119,7 +119,7 @@
                                     <div id="step-2">
                                         <form class="form-horizontal form-label-left">
                                             <div class="form-group">
-                                                <label for="codigo" class="control-label col-md-3 col-sm-3 col-xs-12">C√≥digo</label>
+                                                <label for="codigo" class="control-label col-md-3 col-sm-3 col-xs-12">CÛdigo</label>
                                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                                     <input id="codigo" class="form-control col-md-7 col-xs-12" type="text" name="codigo">
                                                 </div>
@@ -149,7 +149,7 @@
                                                 </div>
                                             </div>   
                                             <div class="form-group">
-                                                <label for="acrescimo" class="control-label col-md-3 col-sm-3 col-xs-12">%Acr√©scimo</label>
+                                                <label for="acrescimo" class="control-label col-md-3 col-sm-3 col-xs-12">AcrÈscimo</label>
                                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                                     <input id="acrescimo" class="form-control col-md-7 col-xs-12" type="text" name="acrescimo">
                                                 </div>
