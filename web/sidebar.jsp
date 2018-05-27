@@ -14,7 +14,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+              <a href="index.html" class="site_title"><i class="fa fa-car"></i> <span> Autopeças Alela!</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -49,7 +49,11 @@
                       <li><a href="cliente.jsp">Cliente</a></li>
                       <li><a href="produto.jsp">Produto</a></li>
                       <li><a href="fornecedor.jsp">Fornecedor</a></li>
-                      <li><a href="usuario.jsp">Usuário</a></li>
+                    </ul>
+                  </li>
+                   <li><a><i class="fa fa-edit"></i>ROTINAS DE VENDAS<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="vendas.jsp">Vendas</a></li>
                     </ul>
                   </li>
                   <li><a href="./Sair"><i class="fa fa-power-off"></i> SAIR </a>
