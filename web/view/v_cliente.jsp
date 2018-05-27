@@ -113,7 +113,6 @@
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <input id="data_nasc" class="date-picker form-control col-md-7 col-xs-12" name="data_nasc" required="required" type="text" class="form-control" data-inputmask="'mask': '99/99/9999'">
-                                    
                                 </div>
                             </div>
                             <div class="ln_solid"></div>
@@ -124,15 +123,49 @@
                                     <button type="submit" class="btn btn-success">Enviar</button>
                                 </div>
                             </div>
-
                         </form>
                     </div>
+                    <div class="">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h2>Lista <small>cadastros de clientes</small></h2>
+                                <ul class="nav navbar-right panel_toolbox">
+                                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+                                    <li><a class="close-link"><i class="fa fa-close"></i></a></li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="x_content">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Nome/Razão Social</th>
+                                            <th>CPF/CNPJ</th>
+                                            <th>RG/IE</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th></th>
+                                            <td>teste</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th></th>
+                                            <td>Teste</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </div>
-
-
     </div>
 </div>
 <!-- /page content -->

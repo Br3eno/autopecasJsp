@@ -5,7 +5,6 @@
             <div class="title_left">
                 <h3>Fornecedores</h3>
             </div>
-
             <div class="title">
                 <div class=" col-xs-12 form-group top_search">
                     <div class="input-group">
@@ -17,7 +16,6 @@
                 </div>
             </div>
         </div>
-
         <div class="clearfix"></div>
         <div class="clearfix"></div>
         <div class="row">
@@ -85,14 +83,53 @@
                                     <button type="submit" class="btn btn-success">Enviar</button>
                                 </div>
                             </div>
-
                         </form>
                     </div>
+                    
+                    
+                    <div class="">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h2>Lista <small>cadastros de fornecedores</small></h2>
+                                <ul class="nav navbar-right panel_toolbox">
+                                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+                                    <li><a class="close-link"><i class="fa fa-close"></i></a></li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="x_content">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Razão Social</th>
+                                            <th>CNPJ</th>
+                                            <th>IE</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th></th>
+                                            <td>teste</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th></th>
+                                            <td>Teste</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>      
+                    
+                    
                 </div>
-
             </div>
         </div>
-
     </div>
 </div>
 <!-- /page content -->
