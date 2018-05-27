@@ -78,44 +78,44 @@
                     </div>
                     <div class="x_content">
                         <br>
-                        <form id="demo-form2" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
+                        <form id="demo-form2" method="POST" action="cadastra-cliente" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
                             <div class="form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Pessoa</label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <div id="Sexo" class="btn-group" data-toggle="buttons">
                                         <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                                            <input type="radio" name="gender" value="fisica" data-parsley-multiple="gender"> &nbsp; Fisica &nbsp;
+                                            <input type="radio" class="pessoa" name="pessoa" value="FISICA" data-parsley-multiple="gender"> &nbsp; Fisica &nbsp;
                                         </label>
                                         <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                                            <input type="radio" name="gender" value="juridica" data-parsley-multiple="gender"> Juridica
+                                            <input type="radio" class="pessoa" name="pessoa" value="JURIDICA" data-parsley-multiple="gender"> Juridica
                                         </label>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="nome">Nome ou Razão Social<span class="required">*</span>
+                                <label id="label-name-raz" class="control-label col-md-3 col-sm-3 col-xs-12" for="nome">Nome ou Razão Social<span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="nome" required="required" class="form-control col-md-7 col-xs-12">
+                                    <input type="text" id="nome" name="nome" required="required" class="form-control col-md-7 col-xs-12">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="fantasia">Fantasia<span class="required">*</span>
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="fantasia">Nome Fantasia<span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <input type="text" id="last-name" name="fantasia" required="required" class="form-control col-md-7 col-xs-12">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="cpf_cnpj" class="control-label col-md-3 col-sm-3 col-xs-12">CPF ou CNPJ:</label>
+                                <label id="label-cpf-cnpj" for="cpf_cnpj" class="control-label col-md-3 col-sm-3 col-xs-12">CPF ou CNPJ:</label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="number" id="cpf_cnpj" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                                    <input type="number" id="cpf_cnpj" class="form-control col-md-7 col-xs-12" type="text" name="cpf_cnpj">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="cpf_cnpj" class="control-label col-md-3 col-sm-3 col-xs-12">RG ou IE:</label>
+                                <label id="label-rg-ie" for="cpf_cnpj" class="control-label col-md-3 col-sm-3 col-xs-12">RG ou IE:</label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input id="rg_ie" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                                    <input id="rg_ie" class="form-control col-md-7 col-xs-12" name="rg_ie" type="text" name="middle-name">
                                 </div>
                             </div>
                             <div class="item form-group">
@@ -130,15 +130,15 @@
                                     <input id="contato" class="form-control col-md-7 col-xs-12" type="text" name="middle-name" data-inputmask="'mask' : '(999) 999-9999'">
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div id="div-gender" class="form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Sexo</label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <div id="Sexo" class="btn-group" data-toggle="buttons">
                                         <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                                            <input type="radio" name="gender" value="masculino" data-parsley-multiple="gender"> &nbsp; Masculino &nbsp;
+                                            <input type="radio" name="gender" class="gender" value="M" data-parsley-multiple="gender"> &nbsp; Masculino &nbsp;
                                         </label>
                                         <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                                            <input type="radio" name="gender" value="feminino" data-parsley-multiple="gender"> Feminino
+                                            <input type="radio" name="gender" class="gender" value="F" data-parsley-multiple="gender"> Feminino
                                         </label>
                                     </div>
                                 </div>
@@ -147,7 +147,7 @@
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Data de Nasc.:<span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input id="data_nasc" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text" class="form-control" data-inputmask="'mask': '99/99/9999'">
+                                    <input id="data_nasc" class="date-picker form-control col-md-7 col-xs-12" name="data_nasc" required="required" type="text" class="form-control" data-inputmask="'mask': '99/99/9999'">
                                     
                                 </div>
                             </div>

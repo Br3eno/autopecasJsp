@@ -24,17 +24,15 @@ public class ClienteDao {
             Connection con = ConnectionFactory.openConnection();
             PreparedStatement pst;
             
-            pst = con.prepareStatement("INSERT INTO `cliente` ( `nome`, `sobrenome`, `apelido`, `data_nascimento`, `registro`, `doc_unico`, `sexo`, `pessoa` )"
-                    + " VALUES ( ?, ?, ?, ?, ?, ?, ?, ? ");
+            pst = con.prepareStatement("INSERT INTO `cliente` ( `nome`, `apelido`, `data_nascimento`, `registro`, `doc_unico`, `sexo`, `pessoa` ) VALUES ( ?,?,?,?,?,?,?) ");
             
             pst.setString(1, c.getNome());
-            pst.setString(2, c.getSobrenome());
-            pst.setString(3, c.getApelido());
-            pst.setString(4, c.getData_nascimento());
-            pst.setString(5, c.getRegistro());
-            pst.setString(6, c.getDoc_unico());
-            pst.setString(7, c.getSexo());
-            pst.setString(8, c.getPessoa());
+            pst.setString(2, c.getApelido());
+            pst.setString(3, c.getData_nascimento());
+            pst.setString(4, c.getRegistro());
+            pst.setString(5, c.getDoc_unico());
+            pst.setString(6, c.getSexo());
+            pst.setString(7, c.getPessoa());
                         
             pst.execute();
             con.close();

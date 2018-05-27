@@ -12,3 +12,4 @@
     <script src="js/custom.min.js"></script>
     <script src="js/jquery.smartWizard.js"></script>
     <script src="js/validator.js"></script>
+    <script type="text/javascript" src="js/pages/custom-cliente.js"></script>
