@@ -1,3 +1,6 @@
+<%@page import="java.util.List"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="entities.Cliente"%>
 <!-- page content -->
 <div class="right_col" role="main">
     <div class="">
@@ -43,7 +46,7 @@
                     </div>
                     <div class="x_content">
                         <br>
-                        <form id="demo-form2" method="POST" action="cadastra-cliente" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
+                        <form id="demo-form2" method="POST" action="cliente" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
                             <div class="form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Pessoa</label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
@@ -143,21 +146,29 @@
                                             <th>Nome/Razão Social</th>
                                             <th>CPF/CNPJ</th>
                                             <th>RG/IE</th>
+                                            <th>Pessoa</th>
                                         </tr>
                                     </thead>
+                                    <%
+                                        List<Cliente> clientes = (List<Cliente>) request.getAttribute("listaClientes");
+                                    %>
                                     <tbody>
-                                        <tr>
-                                            <th></th>
-                                            <td>teste</td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <th></th>
-                                            <td>Teste</td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
+
+                                            <%
+                                                for (Cliente linha : clientes) {
+                                                    
+                                            %>
+                                            <tr>
+                                                <td><%= linha.getId()%></td>
+                                                <td><%= linha.getNome() %></td>
+                                                <td><%= linha.getDoc_unico() %></td>
+                                                <td><%= linha.getRegistro() %>  </td>
+                                                <td><%= linha.getPessoa() %></td>
+                                            </tr>
+                                            
+                                            <%
+                                                }
+                                            %>
                                     </tbody>
                                 </table>
                             </div>

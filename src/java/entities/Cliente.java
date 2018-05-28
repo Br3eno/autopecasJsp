@@ -6,6 +6,7 @@ package entities;
  */
 
 public class Cliente {
+    private Integer id;
     private String nome;
     private String sobrenome;
     private String apelido;
@@ -15,6 +16,14 @@ public class Cliente {
     private String sexo;
     private String pessoa;
 
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+    
     public String getNome() {
         return nome;
     }

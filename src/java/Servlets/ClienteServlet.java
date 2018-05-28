@@ -9,6 +9,8 @@ import dao.ClienteDao;
 import entities.Cliente;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -19,8 +21,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Breno
  */
-@WebServlet(name = "CadastraCliente", urlPatterns = {"/cadastra-cliente"})
-public class CadastraCliente extends HttpServlet {
+@WebServlet(name = "CadastraCliente", urlPatterns = {"/cliente"})
+public class ClienteServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -60,7 +62,14 @@ public class CadastraCliente extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        ClienteDao cDao = new ClienteDao();
+        Cliente cliente = new Cliente();
+        List<Cliente> clientes = new ArrayList<>();
+        
+        clientes = cDao.listClientes();
+        
+        request.setAttribute("listaClientes", clientes);
+        request.getRequestDispatcher("cliente.jsp").forward(request, response);
     }
 
     /**
@@ -86,7 +95,9 @@ public class CadastraCliente extends HttpServlet {
         cliente.setSexo(request.getParameter("gender"));
         cliente.setData_nascimento(request.getParameter("data_nasc"));
         cDao.criaCliente(cliente);
-        response.sendRedirect("cliente.jsp");
+        
+        response.sendRedirect("cliente");
+
         
     }
 

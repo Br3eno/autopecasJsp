@@ -57,13 +57,13 @@ public class ClienteDao {
             
             while(rst.next()){
                 cliente = new Cliente();
+                cliente.setId(rst.getInt("id"));
                 cliente.setNome(rst.getString("nome"));
-                cliente.setSobrenome(rst.getString("sobrenome"));
                 cliente.setApelido(rst.getString("apelido"));
                 cliente.setRegistro(rst.getString("registro"));
-                cliente.setRegistro(rst.getString("doc_unico"));
-                cliente.setRegistro(rst.getString("sexo"));
-                cliente.setRegistro(rst.getString("pessoa"));
+                cliente.setDoc_unico(rst.getString("doc_unico"));
+                cliente.setSexo(rst.getString("sexo"));
+                cliente.setPessoa(rst.getString("pessoa"));
                 clientes.add(cliente);
             }
             

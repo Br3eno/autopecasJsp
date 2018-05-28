@@ -29,7 +29,7 @@ public class Logar extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.sendRedirect("cliente.jsp");
+        response.sendRedirect("login.jsp");
     }
 
     @Override
@@ -43,22 +43,15 @@ public class Logar extends HttpServlet {
             HttpSession session = request.getSession();
             
             if(user.userLogin(login, senha)){
-                response.sendRedirect("cliente.jsp");
+                response.sendRedirect("cliente");
                 session.setAttribute("user", login);
                 session.setMaxInactiveInterval(60 * 1000);
-            }
-
-//            if (login.equals("ramylson") && senha.equals("123")) {
-//                response.sendRedirect("cliente.jsp");
-//                session.setAttribute("user", login);
-//                session.setMaxInactiveInterval(60 * 1);
-
-             else {
-                response.sendRedirect("cliente.jsp");
+            }else {
+                response.sendRedirect("login.jsp");
                 session.setAttribute("user", "");
             }
         } catch (NullPointerException e) {
-            response.sendRedirect("cliente.jsp");
+            response.sendRedirect("login.jsp");
         }
     }
 
