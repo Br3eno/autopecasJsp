@@ -32,14 +32,15 @@ public class UserDao {
         }
     }
     
-    public boolean registerUser(String name, String passwd){
+    public boolean registerUser(String name, String passwd, String email){
         try {
             Connection con = ConnectionFactory.openConnection();
             PreparedStatement pst;
             
-            pst = con.prepareStatement("INSERT INTO `usuario`( `nome`, `senha`) VALUES ?, ? ");
+            pst = con.prepareStatement("INSERT INTO `usuario`( `nome`, `senha`, `email`) VALUES (?, ?, ? )");
             pst.setString(1, name);
             pst.setString(2, passwd);
+            pst.setString(3, email);
             pst.execute();
             con.close();
             

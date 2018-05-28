@@ -4,11 +4,11 @@
     <div class="login_wrapper">
         <div class="animate form login_form">
             <section class="login_content">
-                <form action="" method="post">
+                <form action="registrar" method="post">
                     <h1>Cadastrar Login</h1>
-                    <div>
+<!--                    <div>
                         <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome" required="" />
-                    </div>
+                    </div>-->
                     <div class="item form-group">
                         <div>
                             <input type="email" id="email" name="email" required="required" placeholder="Email" class="form-control col-md-7 col-xs-12">
