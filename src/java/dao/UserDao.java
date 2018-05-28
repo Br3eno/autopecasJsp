@@ -15,6 +15,7 @@ public class UserDao {
     public boolean userLogin(String name, String passwd){
         try {
             Connection con = ConnectionFactory.openConnection();
+            
             ResultSet rSet;            
             PreparedStatement pst;
             
@@ -23,11 +24,16 @@ public class UserDao {
             pst.setString(2, passwd);
             
             rSet = pst.executeQuery();
-            
-            return rSet.next();
+            if(rSet.next()){
+                ConnectionFactory.closeaConnection();
+                return true;
+            }else{
+                return false;
+            }
                        
         } catch (SQLException ex) {
             Logger.getLogger(UserDao.class.getName()).log(Level.SEVERE, null, ex);
+            ConnectionFactory.closeaConnection();
             return false;
         }
     }
@@ -42,11 +48,12 @@ public class UserDao {
             pst.setString(2, passwd);
             pst.setString(3, email);
             pst.execute();
-            con.close();
+            ConnectionFactory.closeaConnection();
             
             return true;
         } catch (SQLException ex) {
             Logger.getLogger(UserDao.class.getName()).log(Level.SEVERE, null, ex);
+            ConnectionFactory.closeaConnection();
             return false;
         }
     }

@@ -35,11 +35,12 @@ public class ClienteDao {
             pst.setString(7, c.getPessoa());
                         
             pst.execute();
-            con.close();
+            ConnectionFactory.closeaConnection();
             
             return true;
         } catch (SQLException ex) {
             Logger.getLogger(ClienteDao.class.getName()).log(Level.SEVERE, null, ex);
+            ConnectionFactory.closeaConnection();
             return false;
         }
     }
@@ -66,10 +67,11 @@ public class ClienteDao {
                 cliente.setPessoa(rst.getString("pessoa"));
                 clientes.add(cliente);
             }
-            
+            ConnectionFactory.closeaConnection();
             return clientes;
         } catch (SQLException ex) {
             Logger.getLogger(ClienteDao.class.getName()).log(Level.SEVERE, null, ex);
+            ConnectionFactory.closeaConnection();
             return null;
         }
         

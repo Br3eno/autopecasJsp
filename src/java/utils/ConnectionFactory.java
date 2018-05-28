@@ -28,7 +28,7 @@ public class ConnectionFactory {
         return conexao;
     }
     
-    public static void closeConnection(){
+    public static void closeaConnection(){
         if(conexao != null){
             try {
                 conexao.close();
