@@ -22,6 +22,12 @@ $(document).ready(function(){
           $('#div-gender').css('display', 'none');
       }
    });
+   
+   $('.buttonFinish').click(function(){
+       if($(this).text() === 'Enviar'){
+           $('#formProduto').submit();
+       }
+   });
+  
 });
-
 

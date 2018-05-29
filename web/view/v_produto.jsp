@@ -83,13 +83,20 @@
                                         </li>
                                     </ul>
                                     <div id="step-1">
-                                        <form class="form-horizontal form-label-left">
+                                        <form id="formProduto" action="" method="POST" class="form-horizontal form-label-left">
 
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="nome">Nome<span class="required">*</span>
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input type="text" id="nome" name="nome" required="required" class="form-control col-md-7 col-xs-12">
+                                                </div>
+                                            </div>
                                             <div class="form-group">
                                                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="descriÃ§Ã£o">Descrição<span class="required">*</span>
                                                 </label>
                                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                                    <input type="text" id="descricao" required="required" class="form-control col-md-7 col-xs-12">
+                                                    <input type="text" id="descricao" name="desc" required="required" class="form-control col-md-7 col-xs-12">
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -112,12 +119,12 @@
                                                 </div>
                                             </div>
 
-                                        </form>
+                                       
                                     </div>
                                     
                                     
-                                    <div id="step-2">
-                                        <form class="form-horizontal form-label-left">
+                                    <div id="step-2" class="form-horizontal form-label-left">
+                                        
                                             <div class="form-group">
                                                 <label for="codigo" class="control-label col-md-3 col-sm-3 col-xs-12">Código</label>
                                                 <div class="col-md-6 col-sm-6 col-xs-12">
@@ -130,12 +137,12 @@
                                                     <input id="codfabricante" class="form-control col-md-7 col-xs-12" type="text" name="codfabricante">
                                                 </div>
                                             </div>
-                                        </form>
+
                                     </div>
                                     
                                     
-                                    <div id="step-3">
-                                        <form class="form-horizontal form-label-left">
+                                    <div id="step-3" class="form-horizontal form-label-left">
+
                                             <div class="form-group">
                                                 <label for="ncm" class="control-label col-md-3 col-sm-3 col-xs-12">NCM</label>
                                                 <div class="col-md-6 col-sm-6 col-xs-12">
