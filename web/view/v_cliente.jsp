@@ -60,6 +60,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <div style="display: none;" id="form-conteudo">
                             <div class="form-group">
                                 <label id="label-name-raz" class="control-label col-md-3 col-sm-3 col-xs-12" for="nome">Nome ou Razão Social<span class="required">*</span>
                                 </label>
@@ -117,6 +118,7 @@
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <input id="data_nasc" class="date-picker form-control col-md-7 col-xs-12" name="data_nasc" required="required" type="text" class="form-control" data-inputmask="'mask': '99/99/9999'">
                                 </div>
+                            </div>
                             </div>
                             <div class="ln_solid"></div>
                             <div class="form-group">

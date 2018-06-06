@@ -7,6 +7,7 @@
 $(document).ready(function(){
    $('.pessoa').change(function(){
       if($(this).val() === 'FISICA'){
+          $('#form-conteudo').css('display', 'block');
           console.log('FISICA');
           $('#label-rg-ie').text('RG');
           $('#label-cpf-cnpj').text('CPF');
@@ -16,6 +17,7 @@ $(document).ready(function(){
           
       }else{
           console.log('JURIDICA');
+          $('#form-conteudo').css('display', 'block');
           $('#label-rg-ie').text('IE');
           $('#label-cpf-cnpj').text('CNPJ');
           $('#label-name-raz').text('Razao Social');
