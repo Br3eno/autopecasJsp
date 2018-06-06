@@ -1,10 +1,8 @@
-CREATE DATABASE  IF NOT EXISTS `autopecas` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `autopecas`;
--- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.22, for Linux (x86_64)
 --
--- Host: 127.0.0.1    Database: autopecas
+-- Host: localhost    Database: autopecas
 -- ------------------------------------------------------
--- Server version	5.5.5-10.1.32-MariaDB
+-- Server version	5.7.22-0ubuntu0.16.04.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -35,7 +33,7 @@ CREATE TABLE `cliente` (
   `pessoa` enum('FISICA','JURIDICA') NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `doc-unico_UNIQUE` (`doc_unico`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -44,7 +42,7 @@ CREATE TABLE `cliente` (
 
 LOCK TABLES `cliente` WRITE;
 /*!40000 ALTER TABLE `cliente` DISABLE KEYS */;
-INSERT INTO `cliente` VALUES (1,'Cliente','Clientinho','1997-03-12','3132231','131321','M','FISICA'),(3,'sadadsads','sadsadasdas','12/31/2313','132123132312','123321213312312','M','FISICA'),(4,'Juridicao','Juriz','12/31/3231','123121233\'','13213231213','F','JURIDICA');
+INSERT INTO `cliente` VALUES (1,'Cliente','Clientinho','1997-03-12','3132231','131321','M','FISICA'),(3,'sadadsads','sadsadasdas','12/31/2313','132123132312','123321213312312','M','FISICA'),(4,'Juridicao','Juriz','12/31/3231','123121233\'','13213231213','F','JURIDICA'),(5,'adsasd','assadads','13/21/3213','132132213132','1231213132','M','FISICA'),(6,'cliente','sadsa','13/23/1213','1232321','321312321','M','FISICA'),(7,'LULULU','asdas','31/23/2313','312132123','123123123',NULL,'JURIDICA');
 /*!40000 ALTER TABLE `cliente` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -59,8 +57,9 @@ CREATE TABLE `usuario` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(90) NOT NULL,
   `senha` varchar(20) NOT NULL,
+  `email` varchar(90) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -69,7 +68,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'logista','loja'),(2,'vendedor','venda'),(3,'adm','adm');
+INSERT INTO `usuario` VALUES (1,'logista','loja',NULL),(2,'vendedor','venda',NULL),(3,'adm','adm',NULL),(4,'testea','testea','asddas@asdas.dasdas');
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -82,4 +81,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-05-27 11:25:55
+-- Dump completed on 2018-06-06 14:15:27
