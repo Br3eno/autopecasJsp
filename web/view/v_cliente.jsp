@@ -51,10 +51,10 @@
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Pessoa</label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <div id="Sexo" class="btn-group" data-toggle="buttons">
-                                        <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                        <label class="btn btn-default botao-tipo" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
                                             <input type="radio" class="pessoa" name="pessoa" value="FISICA" data-parsley-multiple="gender"> &nbsp; Fisica &nbsp;
                                         </label>
-                                        <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                        <label class="btn btn-default botao-tipo" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
                                             <input type="radio" class="pessoa" name="pessoa" value="JURIDICA" data-parsley-multiple="gender"> Juridica
                                         </label>
                                     </div>
@@ -123,7 +123,7 @@
                             <div class="ln_solid"></div>
                             <div class="form-group">
                                 <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                                    <button class="btn btn-primary" type="button">Cancelar</button>
+                                    <button type="button" id="canc-form" class="btn btn-primary" type="button">Cancelar</button>
                                     <button class="btn btn-primary" type="reset">Resetar</button>
                                     <button type="submit" class="btn btn-success">Enviar</button>
                                 </div>
@@ -141,7 +141,7 @@
                                 <div class="clearfix"></div>
                             </div>
                             <div class="x_content">
-                                <table class="table table-striped">
+                                <table id="datatable" class="table table-striped">
                                     <thead>
                                         <tr>
                                             <th>#</th>

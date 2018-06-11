@@ -5,6 +5,15 @@
  */
 
 $(document).ready(function(){
+
+    $('#canc-form').click(function(){
+        $('#form-conteudo').css('display', 'none');
+        $('.botao-tipo').each(function(){
+            $(this).removeClass('active');
+        });
+                
+    });
+    
    $('.pessoa').change(function(){
       if($(this).val() === 'FISICA'){
           $('#form-conteudo').css('display', 'block');
