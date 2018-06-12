@@ -82,8 +82,8 @@
                                             </a>
                                         </li>
                                     </ul>
-                                    <div id="step-1">
-                                        <form id="formProduto" action="" method="POST" class="form-horizontal form-label-left">
+                                        <form id="formProduto" action="produto" method="POST" class="form-horizontal form-label-left">
+                                            <div id="step-1">
 
                                             <div class="form-group">
                                                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="nome">Nome<span class="required">*</span>
