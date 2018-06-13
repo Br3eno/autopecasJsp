@@ -9,8 +9,14 @@ import dao.ClienteDao;
 import entities.Cliente;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.io.Writer;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
+import javax.json.Json;
+import javax.json.JsonObject;
+import javax.json.JsonObjectBuilder;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -99,6 +105,33 @@ public class ClienteServlet extends HttpServlet {
         response.sendRedirect("cliente");
 
         
+    }
+    
+    @Override
+    protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        int idCliente = Integer.parseInt(request.getParameter("id"));
+        ClienteDao cDao = new ClienteDao();
+        response.setContentType("application/json");
+        Boolean cDelete = cDao.deleteClienteById(idCliente);
+        String controle = cDelete == true ? "1" : "0";
+        
+        /*JSON*/
+        String json =  toJson(cDelete);
+        response.setCharacterEncoding("UTF-8");
+        response.getWriter().write(json);
+        
+    }
+    
+    private String toJson(boolean cDelete) throws IOException{
+        String str;
+        JsonObjectBuilder json = Json.createObjectBuilder()
+                .add("status", cDelete);
+        JsonObject jsonObject = json.build();
+        try(Writer writer = new StringWriter()) {
+        Json.createWriter(writer).write(jsonObject);
+        str = writer.toString();
+        return str;
+}
     }
 
     /**

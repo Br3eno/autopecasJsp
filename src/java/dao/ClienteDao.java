@@ -45,6 +45,25 @@ public class ClienteDao {
         }
     }
     
+    public boolean deleteClienteById(Integer idCliente){
+        try {
+            String sql = "DELETE FROM `cliente` WHERE id = ?";
+            
+            Connection con = ConnectionFactory.openConnection();
+            PreparedStatement pst;
+            ResultSet rst;
+            
+            pst = con.prepareStatement(sql);
+            pst.setInt(1, idCliente);
+            
+            pst.execute();
+            return true; 
+        } catch (SQLException ex) {
+            Logger.getLogger(ClienteDao.class.getName()).log(Level.SEVERE, null, ex);
+            return false;
+        }
+    }
+    
     public List<Cliente> listClientes(){
         try {
             ResultSet rst;

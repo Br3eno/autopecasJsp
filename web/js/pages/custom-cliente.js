@@ -42,3 +42,16 @@ $(document).ready(function(){
   
 });
 
+function deletaCliente(id){
+    var deleteRequest = new XMLHttpRequest();
+    deleteRequest.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            $("#line-" + id).remove();
+        }else{
+        }
+    }
+    deleteRequest.open("DELETE", "cliente?id="+id);
+    deleteRequest.setRequestHeader("Content-type", "multipart/form-data");
+    deleteRequest.send();
+}
+

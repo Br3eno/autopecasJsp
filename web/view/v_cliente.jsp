@@ -149,6 +149,7 @@
                                             <th>CPF/CNPJ</th>
                                             <th>RG/IE</th>
                                             <th>Pessoa</th>
+                                            <th>Deletar</th>
                                         </tr>
                                     </thead>
                                     <%
@@ -160,12 +161,13 @@
                                                 for (Cliente linha : clientes) {
                                                     
                                             %>
-                                            <tr>
+                                            <tr id="line-<%= linha.getId() %>">
                                                 <td><%= linha.getId()%></td>
                                                 <td><%= linha.getNome() %></td>
                                                 <td><%= linha.getDoc_unico() %></td>
                                                 <td><%= linha.getRegistro() %>  </td>
                                                 <td><%= linha.getPessoa() %></td>
+                                                <td><button class="btn btn-danger" onclick="deletaCliente(<%= linha.getId()%>)" >Deletar</button> </td>
                                             </tr>
                                             
                                             <%
