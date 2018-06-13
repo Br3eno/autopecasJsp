@@ -34,11 +34,10 @@
                                 <p class="change_link">Novo no site?
                                     <a href="cadastraruser.jsp" class="to_register"> Criar uma nova conta </a>
                                 </p>
-
                                 <div class="clearfix"></div>
                                 <br />
                                 <div>
-                                    <h1><i class="fa fa-car"></i> Autopeças Alela!</h1>
+                                    <img src="images/logo.png" alt="...">
                                     <p>Sistema JSP! Desenvolvido por CC Uni9 VP</p>
                                 </div>
                             </div>
