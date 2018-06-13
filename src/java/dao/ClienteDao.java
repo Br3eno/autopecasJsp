@@ -23,9 +23,12 @@ public class ClienteDao {
         try {
             Connection con = ConnectionFactory.openConnection();
             PreparedStatement pst;
-            
-            pst = con.prepareStatement("INSERT INTO `cliente` ( `nome`, `apelido`, `data_nascimento`, `registro`, `doc_unico`, `sexo`, `pessoa` ) VALUES ( ?,?,?,?,?,?,?) ");
-            
+            if (c.getId() == null){
+                pst = con.prepareStatement("INSERT INTO `cliente` ( `nome`, `apelido`, `data_nascimento`, `registro`, `doc_unico`, `sexo`, `pessoa` ) VALUES ( ?,?,?,?,?,?,?) ");
+            }else{
+                pst = con.prepareStatement("update `cliente` set nome=?, apelido=?, data_nascimento=?, registro=?, doc_unico=?, sexo=?, pessoa=? where id=?");
+                pst.setInt(8, c.getId());
+            }
             pst.setString(1, c.getNome());
             pst.setString(2, c.getApelido());
             pst.setString(3, c.getData_nascimento());
@@ -63,7 +66,7 @@ public class ClienteDao {
             return false;
         }
     }
-    
+        
     public List<Cliente> listClientes(){
         try {
             ResultSet rst;
