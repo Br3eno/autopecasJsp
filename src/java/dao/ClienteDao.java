@@ -18,6 +18,30 @@ import java.util.List;
 public class ClienteDao {
     private Cliente cliente = new Cliente(); 
     private List<Cliente> clientes = new ArrayList<Cliente>();
+    
+    public boolean alteraCliente(Integer id, String nome, String doc, String reg){
+        
+        try {
+            Connection con = ConnectionFactory.openConnection();
+            PreparedStatement pst;
+            ResultSet rst;
+            String sql = "update `cliente` set nome=?, doc_unico=?, registro=? where id=?";
+            pst = con.prepareStatement(sql);
+            pst.setString(1, nome);
+            pst.setString(2, doc);
+            pst.setString(3, reg);
+            pst.setInt(4, id);
+            
+            if(pst.execute()){
+                return true;
+            }else{
+                return false;
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(ClienteDao.class.getName()).log(Level.SEVERE, null, ex);
+            return false;
+        }
+    }
 
     public boolean criaCliente(Cliente c) {
         try {
@@ -26,7 +50,7 @@ public class ClienteDao {
             if (c.getId() == null){
                 pst = con.prepareStatement("INSERT INTO `cliente` ( `nome`, `apelido`, `data_nascimento`, `registro`, `doc_unico`, `sexo`, `pessoa` ) VALUES ( ?,?,?,?,?,?,?) ");
             }else{
-                pst = con.prepareStatement("update `cliente` set nome=?, apelido=?, data_nascimento=?, registro=?, doc_unico=?, sexo=?, pessoa=? where id=?");
+                pst = con.prepareStatement("update `cliente` set nome=?, doc_unico=?, registro=? where id=?");
                 pst.setInt(8, c.getId());
             }
             pst.setString(1, c.getNome());

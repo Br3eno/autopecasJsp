@@ -196,7 +196,7 @@
                                                             </tr>
                                                         </thead>
                                                         <tbody>
-                                                            <tr>
+                                                            <tr>                            
                                                                 <td><input id="mNome" type="text"></td>
                                                                 <td><input id="mCpf" type="text"></td>
                                                                 <td><input id="mRg" type="text"></td>
@@ -207,7 +207,7 @@
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                                                <button type="button" onclick="preparaUpdate()" class="btn btn-primary">Salvar Alterações</button>
+                                                <button onclick="preparaUpdate()" class="btn btn-primary">Salvar Alterações</button>
                                             </div>
                                         </div><!-- /.modal-content -->
                                     </div><!-- /.modal-dialog -->

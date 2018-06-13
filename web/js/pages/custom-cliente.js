@@ -46,6 +46,10 @@ $(document).ready(function () {
 
 });
 
+function updateDomFromModal(id) {
+
+}
+
 function preparaModal(id) {
     var nome = $('#nome-' + id).text();
     var doc = $('#doc-' + id).text();
@@ -59,12 +63,12 @@ function preparaModal(id) {
 //    enviaUpdate(id, nome, doc, reg);
 }
 
-function preparaUpdate(){
-    
+function preparaUpdate() {
+
     var nome = $('#mNome').val();
     var doc = $('#mCpf').val();
     var reg = $('#mRg').val();
-    
+//
     enviaUpdate(a, nome, doc, reg);
 }
 
@@ -72,13 +76,17 @@ function enviaUpdate(id, nome, doc, reg) {
     var updateRequest = new XMLHttpRequest();
     updateRequest.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            $("#line-" + id).remove();
+            
         } else {
         }
     }
-    updateRequest.open("PUT", "cliente?id="+id+"&nome="+nome+"&cpf="+doc+"&reg="+reg);
+    updateRequest.open("PUT", "cliente?id=" + id + "&nome=" + nome + "&cpf=" + doc + "&reg=" + reg);
     updateRequest.setRequestHeader("Content-type", "multipart/form-data");
     updateRequest.send();
+
+    $('#nome-' + id).text(nome);
+    $('#doc-' + id).text(doc);
+    $('#reg-' + id).text(reg);
 }
 
 function deletaCliente(id) {

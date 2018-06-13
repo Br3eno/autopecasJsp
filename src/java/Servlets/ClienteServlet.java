@@ -124,10 +124,22 @@ public class ClienteServlet extends HttpServlet {
     
     @Override
     protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        
+        ClienteDao cDao = new ClienteDao();
+        Cliente cliente = new Cliente();
+        
         int idCliente = Integer.parseInt(request.getParameter("id"));
         String nome = request.getParameter("nome");
         String cpf = request.getParameter("cpf");
         String reg = request.getParameter("reg");
+        
+        cliente.setId(idCliente);
+        cliente.setNome(request.getParameter("nome"));
+        cliente.setDoc_unico(request.getParameter("cpf_cnpj"));
+        cliente.setRegistro(request.getParameter("rg_ie"));
+        cDao.alteraCliente(idCliente, nome, cpf, reg);
+        
+
     }
     
     private String toJson(boolean cDelete) throws IOException{
