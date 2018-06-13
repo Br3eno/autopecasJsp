@@ -122,6 +122,14 @@ public class ClienteServlet extends HttpServlet {
         
     }
     
+    @Override
+    protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        int idCliente = Integer.parseInt(request.getParameter("id"));
+        String nome = request.getParameter("nome");
+        String cpf = request.getParameter("cpf");
+        String reg = request.getParameter("reg");
+    }
+    
     private String toJson(boolean cDelete) throws IOException{
         String str;
         JsonObjectBuilder json = Json.createObjectBuilder()

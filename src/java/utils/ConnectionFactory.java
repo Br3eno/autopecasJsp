@@ -12,7 +12,7 @@ public class ConnectionFactory {
     private static Connection conexao;
     private static final String URL = "jdbc:mysql://localhost/autopecas";
     private static final String USUARIO = "root";
-    private static final String PASSWD = null;
+    private static final String PASSWD = "alexandre123";
     
     public static Connection openConnection(){
         if(conexao == null){

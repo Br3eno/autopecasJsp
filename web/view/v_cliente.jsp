@@ -61,64 +61,64 @@
                                 </div>
                             </div>
                             <div style="display: none;" id="form-conteudo">
-                            <div class="form-group">
-                                <label id="label-name-raz" class="control-label col-md-3 col-sm-3 col-xs-12" for="nome">Nome ou Razão Social<span class="required">*</span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="nome" name="nome" required="required" class="form-control col-md-7 col-xs-12">
-                                </div>
-                            </div>
-                            <div id="fantasia" class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="fantasia">Nome Fantasia<span class="required">*</span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="last-name" name="fantasia" required="required" class="form-control col-md-7 col-xs-12">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label id="label-cpf-cnpj" for="cpf_cnpj" class="control-label col-md-3 col-sm-3 col-xs-12">CPF ou CNPJ:</label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="number" id="cpf_cnpj" class="form-control col-md-7 col-xs-12" type="text" name="cpf_cnpj">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label id="label-rg-ie" for="cpf_cnpj" class="control-label col-md-3 col-sm-3 col-xs-12">RG ou IE:</label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input id="rg_ie" class="form-control col-md-7 col-xs-12" name="rg_ie" type="text" name="middle-name">
-                                </div>
-                            </div>
-                            <div class="item form-group">
-                                <label for="email" class="control-label col-md-3 col-sm-3 col-xs-12">E-mail:</label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="email" id="email" name="email" required="required" class="form-control col-md-7 col-xs-12" type="text" name="email">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="contato" class="control-label col-md-3 col-sm-3 col-xs-12">Contato:</label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input id="contato" class="form-control col-md-7 col-xs-12" type="text" name="middle-name" data-inputmask="'mask' : '(999) 999-9999'">
-                                </div>
-                            </div>
-                            <div id="div-gender" class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Sexo</label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <div id="Sexo" class="btn-group" data-toggle="buttons">
-                                        <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                                            <input type="radio" name="gender" class="gender" value="M" data-parsley-multiple="gender"> &nbsp; Masculino &nbsp;
-                                        </label>
-                                        <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                                            <input type="radio" name="gender" class="gender" value="F" data-parsley-multiple="gender"> Feminino
-                                        </label>
+                                <div class="form-group">
+                                    <label id="label-name-raz" class="control-label col-md-3 col-sm-3 col-xs-12" for="nome">Nome ou Razão Social<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="nome" name="nome" required="required" class="form-control col-md-7 col-xs-12">
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Data de Nasc.:<span class="required">*</span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input id="data_nasc" class="date-picker form-control col-md-7 col-xs-12" name="data_nasc" required="required" type="text" class="form-control" data-inputmask="'mask': '99/99/9999'">
+                                <div id="fantasia" class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="fantasia">Nome Fantasia<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="last-name" name="fantasia" required="required" class="form-control col-md-7 col-xs-12">
+                                    </div>
                                 </div>
-                            </div>
+                                <div class="form-group">
+                                    <label id="label-cpf-cnpj" for="cpf_cnpj" class="control-label col-md-3 col-sm-3 col-xs-12">CPF ou CNPJ:</label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="number" id="cpf_cnpj" class="form-control col-md-7 col-xs-12" type="text" name="cpf_cnpj">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label id="label-rg-ie" for="cpf_cnpj" class="control-label col-md-3 col-sm-3 col-xs-12">RG ou IE:</label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input id="rg_ie" class="form-control col-md-7 col-xs-12" name="rg_ie" type="text" name="middle-name">
+                                    </div>
+                                </div>
+                                <div class="item form-group">
+                                    <label for="email" class="control-label col-md-3 col-sm-3 col-xs-12">E-mail:</label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="email" id="email" name="email" required="required" class="form-control col-md-7 col-xs-12" type="text" name="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contato" class="control-label col-md-3 col-sm-3 col-xs-12">Contato:</label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input id="contato" class="form-control col-md-7 col-xs-12" type="text" name="middle-name" data-inputmask="'mask' : '(999) 999-9999'">
+                                    </div>
+                                </div>
+                                <div id="div-gender" class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Sexo</label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div id="Sexo" class="btn-group" data-toggle="buttons">
+                                            <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                                <input type="radio" name="gender" class="gender" value="M" data-parsley-multiple="gender"> &nbsp; Masculino &nbsp;
+                                            </label>
+                                            <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                                <input type="radio" name="gender" class="gender" value="F" data-parsley-multiple="gender"> Feminino
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Data de Nasc.:<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input id="data_nasc" class="date-picker form-control col-md-7 col-xs-12" name="data_nasc" required="required" type="text" class="form-control" data-inputmask="'mask': '99/99/9999'">
+                                    </div>
+                                </div>
                             </div>
                             <div class="ln_solid"></div>
                             <div class="form-group">
@@ -149,6 +149,7 @@
                                             <th>CPF/CNPJ</th>
                                             <th>RG/IE</th>
                                             <th>Pessoa</th>
+                                            <th>Atualizar</th>
                                             <th>Deletar</th>
                                         </tr>
                                     </thead>
@@ -157,24 +158,60 @@
                                     %>
                                     <tbody>
 
-                                            <%
-                                                for (Cliente linha : clientes) {
-                                                    
-                                            %>
-                                            <tr id="line-<%= linha.getId() %>">
-                                                <td><%= linha.getId()%></td>
-                                                <td><%= linha.getNome() %></td>
-                                                <td><%= linha.getDoc_unico() %></td>
-                                                <td><%= linha.getRegistro() %>  </td>
-                                                <td><%= linha.getPessoa() %></td>
-                                                <td><button class="btn btn-danger" onclick="deletaCliente(<%= linha.getId()%>)" >Deletar</button> </td>
-                                            </tr>
-                                            
-                                            <%
-                                                }
-                                            %>
+                                        <%
+                                            for (Cliente linha : clientes) {
+
+                                        %>
+                                        <tr id="line-<%= linha.getId()%>">
+                                            <td><%= linha.getId()%></td>
+                                            <td><span id="nome-<%= linha.getId()%>"><%= linha.getNome()%></span></td>
+                                            <td><span id="doc-<%= linha.getId()%>"><%= linha.getDoc_unico()%></span></td>
+                                            <td><span id="reg-<%= linha.getId()%>"><%= linha.getRegistro()%></span>  </td>
+                                            <td><span id="tipo-<%= linha.getId()%>"><%= linha.getPessoa()%></span></td>
+                                            <td><button class="btn btn-info" data-toggle="modal" onclick="preparaModal(<%= linha.getId() %>)" data-target="#myModal">Atualizar</button></td>
+                                            <td><button class="btn btn-danger" onclick="deletaCliente(<%= linha.getId()%>)" >Deletar</button> </td>
+                                        </tr>
+
+                                        <%
+                                            }
+                                        %>
                                     </tbody>
                                 </table>
+                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <h4 class="modal-title">Alteração de dados de cliente</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h1>Dados Cliente</h1>
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Nome/Razão Social</th>
+                                                                <th>CPF/CNPJ</th>
+                                                                <th>RG/IE</th>
+                                                                <!--<th>Pessoa</th>-->
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><input id="mNome" type="text"></td>
+                                                                <td><input id="mCpf" type="text"></td>
+                                                                <td><input id="mRg" type="text"></td>
+                                                                <!--<td><input id="mTipo" type="text"></td>-->
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                                <button type="button" onclick="preparaUpdate()" class="btn btn-primary">Salvar Alterações</button>
+                                            </div>
+                                        </div><!-- /.modal-content -->
+                                    </div><!-- /.modal-dialog -->
+                                </div><!-- /.modal -->
                             </div>
                         </div>
                     </div>
