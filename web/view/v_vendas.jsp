@@ -33,8 +33,58 @@
                 </div>
             </div>
         </div>
+                        <!--nome cliejte, produto, preço, desconto, valor, total !-->
+                       
         <div class="title_left">
             <h3>Efetivação de Vendas</h3>
-        </div>
+            <div class="x_content">
+                        <br>
+                        <form id="demo-form2" method="POST" action="vendas" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
+                            <div class="form-group">
+                                    <label id="label-name-client" class="control-label col-md-3 col-sm-3 col-xs-12" for="nomecliente">Nome Cliente:<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="nome" name="nomecliente" required="required" class="form-control col-md-7 col-xs-12">
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="produto">Produto:<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="last-name" name="produto" required="required" class="form-control col-md-7 col-xs-12">
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                    <label id="label-cpf-cnpj" for="preco" class="control-label col-md-3 col-sm-3 col-xs-12">Preço:</label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="number" id="cpf_cnpj" class="form-control col-md-7 col-xs-12" type="text" name="preco">
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                    <label id="label-rg-ie" for="desconto" class="control-label col-md-3 col-sm-3 col-xs-12">Desconto:</label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input id="desconto" class="form-control col-md-7 col-xs-12" name="desconto" type="text" name="middle-name">
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                    <label for="Valor" class="control-label col-md-3 col-sm-3 col-xs-12">Valor:</label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="number" id="valor" name="valor" required="required" class="form-control col-md-7 col-xs-12" type="text" name="email">
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                    <label for="total" class="control-label col-md-3 col-sm-3 col-xs-12">Total:</label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input id="total" class="form-control col-md-7 col-xs-12" type="number" name="total">
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                                    <button type="button" id="canc-form" class="btn btn-primary" type="button">Cancelar</button>
+                                    <button class="btn btn-primary" type="reset">Resetar</button>
+                                    <button type="submit" class="btn btn-success">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
     </div>
 </div>
