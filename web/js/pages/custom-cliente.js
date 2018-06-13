@@ -22,6 +22,7 @@ $(document).ready(function(){
           $('#label-cpf-cnpj').text('CPF');
           $('#label-name-raz').text('Nome Completo');
           $('#div-gender').css('display', 'block');
+          $('#fantasia').css('display', 'none');
           
           
       }else{
@@ -31,7 +32,8 @@ $(document).ready(function(){
           $('#label-cpf-cnpj').text('CNPJ');
           $('#label-name-raz').text('Razao Social');
           $('#div-gender').css('display', 'none');
-      }
+          $('#fantasia').css('display', 'block');
+       }
    });
    
    $('.buttonFinish').click(function(){

@@ -68,7 +68,7 @@
                                     <input type="text" id="nome" name="nome" required="required" class="form-control col-md-7 col-xs-12">
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div id="fantasia" class="form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="fantasia">Nome Fantasia<span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
@@ -144,7 +144,7 @@
                                 <table id="datatable" class="table table-striped">
                                     <thead>
                                         <tr>
-                                            <th>#</th>
+                                            <th>Código</th>
                                             <th>Nome/Razão Social</th>
                                             <th>CPF/CNPJ</th>
                                             <th>RG/IE</th>
